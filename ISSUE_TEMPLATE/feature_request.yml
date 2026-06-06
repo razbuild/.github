@@ -1,0 +1,68 @@
+name: Feature Request
+description: Suggest an idea or enhancement for a RazBuild project.
+title: "[FEAT] Concise Description of the Feature"
+labels: ["enhancement", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a new feature! Please provide as much detail as possible.
+
+  - type: dropdown
+    id: project
+    attributes:
+      label: Project
+      description: Which RazBuild project is this feature request for?
+      options:
+        - raztodo
+        - raztint
+        - Other (specify in description)
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Is your feature request related to a problem?
+      description: A clear and concise description of what the problem is.
+      placeholder: "I'm always frustrated when..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Describe the solution you'd like
+      description: A clear and concise description of what you want to happen.
+      placeholder: "I would like to see..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives you've considered
+      description: Any alternative solutions or features you've thought about.
+    validations:
+      required: false
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Use Case
+      description: How would this feature be used? Provide examples or code snippets if possible.
+      placeholder: |
+        Example usage:
+        ```python
+        # your example here
+        ```
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Any other context, examples, or screenshots about the feature request.
+    validations:
+      required: false
