@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="svg/logo.svg" alt="RazBuild" width="600" />
+  <img src="svg/RazBuild.svg" alt="RazBuild" width="600" />
 </div>
 
 <br>
